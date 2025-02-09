@@ -9,8 +9,6 @@ APIs Used:
 - `playerdb.co/api/player/steam` 
 - `jokeapi.dev`
 
-Chat used with Iframe: `hack.chat`
-
 TODO: Responsiveness, more commands, and refactoring...
 
 ##

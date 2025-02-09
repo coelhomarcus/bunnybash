@@ -222,25 +222,6 @@ function type(e) {
             return;
         }
 
-        if (consoleText.innerText == "chat") {
-            addUserLine(consoleText.innerText);
-            cmdHistory.push(consoleText.innerText);
-            consoleText.innerText = "";
-            async function showHelpMessages() {
-                const messages = [
-                    `<iframe src="https://hack.chat/?marcusterminalchat"></iframe>`
-                ];
-                for (let i = 0; i < messages.length; i++) {
-                    await new Promise(resolve => setTimeout(() => {
-                        addConsoleLine(messages[i]);
-                        resolve();
-                    }, i * 10));
-                }
-            }
-            showHelpMessages();
-            return;
-        }
-
         if (consoleText.innerText == "steam") {
             addUserLine(consoleText.innerText);
             cmdHistory.push(consoleText.innerText);
