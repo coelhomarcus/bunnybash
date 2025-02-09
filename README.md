@@ -4,7 +4,7 @@ A website that simulates the functionality of a terminal with features for fetch
 
 APIs Used:
 - `api.waifu.pics`
-- `random.dog/woof.json`
+- `dog.ceo/api`
 - `blockchain.info/ticker`
 - `playerdb.co/api/player/steam` 
 - `jokeapi.dev`
@@ -15,3 +15,4 @@ TODO: Responsiveness, more commands, and refactoring...
 
 ##
 
+https://coelhomarcus.github.io/marcusbash/

@@ -163,9 +163,6 @@ function type(e) {
             async function showHelpMessages() {
                 const reponseAPI = await fetch('https://api.waifu.pics/sfw/dance');
                 const json = await reponseAPI.json();
-                console.log(json);
-
-
 
                 const messages = [
                     `<img class="imgdefault" src="${json.url}">`
@@ -186,14 +183,11 @@ function type(e) {
             cmdHistory.push(consoleText.innerText);
             consoleText.innerText = "";
             async function showHelpMessages() {
-                const reponseAPI = await fetch('https://random.dog/woof.json');
+                const reponseAPI = await fetch('https://dog.ceo/api/breeds/image/random');
                 const json = await reponseAPI.json();
-                console.log(json);
-
-
 
                 const messages = [
-                    `<img class="imgdefault" src="${json.url}">`
+                    `<img class="imgdefault" src="${json.message}">`
                 ];
                 for (let i = 0; i < messages.length; i++) {
                     await new Promise(resolve => setTimeout(() => {
@@ -213,7 +207,6 @@ function type(e) {
             async function showHelpMessages() {
                 const reponseAPI = await fetch('https://blockchain.info/ticker');
                 const json = await reponseAPI.json();
-                console.log(json);
 
                 const messages = [
                     `bitcoin: $${json.USD.sell}`
@@ -255,8 +248,6 @@ function type(e) {
             async function showHelpMessages() {
                 const reponseAPI = await fetch('https://playerdb.co/api/player/steam/bakanull');
                 const json = await reponseAPI.json();
-                console.log(json.data.player);
-
                 const messages = [
                     `<a class="social" href="${json.data.player.meta.profileurl}" target="_blank">${json.data.player.username} - click here!</a>`,
                     `<img src="${json.data.player.avatar}">`,
@@ -300,6 +291,7 @@ function type(e) {
         setTimeout(function () {
             addConsoleLine("This command does not exist");
         }, 300);
+        scrollToBottom();
     }
 }
 
@@ -307,6 +299,7 @@ function addUserLine(text) {
     const p = document.createElement("p");
     p.innerHTML = `coelho@marcus.com > <span class="command">${text}</span>`;
     answers.appendChild(p);
+    scrollToBottom();
 }
 
 function addConsoleLine(text) {
@@ -315,4 +308,9 @@ function addConsoleLine(text) {
     p.classList.add("typing");
     p.classList.add("console");
     answers.appendChild(p);
+    scrollToBottom();
+}
+
+function scrollToBottom() {
+    window.scrollTo(0, document.body.scrollHeight);
 }

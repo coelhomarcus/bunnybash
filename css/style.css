@@ -47,12 +47,12 @@ p {
 }
 
 .console {
-    color: #61afef;
+    color: #ffe5d9;
     font-size: 1rem;
 }
 
 .text {
-    color: #dcdfe4;
+    color: #61afef;
 }
 
 .social {
@@ -85,8 +85,21 @@ p {
 }
 
 .imgdefault {
-    width: 420px;
+    width: auto;
+    height: 380px;
     border: 2px solid #98c379;
+    animation: teste 2s forwards;
+}
+
+@keyframes teste {
+    from {
+        transform: translate3d(-1000px, 0, 0);
+
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 iframe {
@@ -109,5 +122,80 @@ iframe {
 
     to {
         width: 100%;
+    }
+}
+
+#campoTexto {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #campoTexto {
+        padding: 10px;
+        width: 150px;
+        height: 10px;
+        display: initial;
+        opacity: 1;
+        border: none;
+        border-radius: 5px;
+        border: 5px solid white;
+        caret-color: transparent;
+    }
+
+    #campoTexto:focus {
+        border: 5px solid #98c379;
+        outline: none;
+    }
+
+
+    body {
+        background-color: #211d1b;
+        font-family: "Courier Prime", serif;
+        margin: 5px 10px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .console {
+        color: #61afef;
+        font-size: 0.75rem;
+    }
+
+    .explain {
+        width: 100px;
+        font-size: 0.75rem;
+    }
+
+
+    .imgdefault {
+        width: 300px;
+    }
+
+    p {
+        overflow: visible;
+        white-space: wrap;
+        font-size: 0.75rem;
+    }
+
+    iframe {
+        height: 75vh;
+        width: 95vw;
+        border: none;
+        border: 2px solid #98c379;
+    }
+
+    .blinker {
+        background-color: #98c379;
+        width: 5px;
+        height: 10px;
+        display: block;
+        animation: blinker 1s linear infinite;
+    }
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
