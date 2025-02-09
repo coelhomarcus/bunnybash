@@ -60,7 +60,6 @@ function type(e) {
             async function showHelpMessages() {
                 const messages = [
                     `<span class="title">**ForFun Commands**</span>`,
-                    `<div class="info"><span class="command">chat</span><span class="explain">Chat online w/ HackChat</span></div>`,
                     `<div class="info"><span class="command">dog</span><span class="explain">Random dog image</span></div>`,
                     `<div class="info"><span class="command">dance</span><span class="explain">Random anime dance</span></div>`,
                     `<div class="info"><span class="command">btc</span><span class="explain">Get bitcoin price</span></div>`,
