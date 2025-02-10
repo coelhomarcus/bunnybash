@@ -98,10 +98,10 @@ p {
     width: auto;
     height: 380px;
     border: 2px solid var(--main-text-console-color);
-    animation: teste 2s forwards;
+    animation: imgAnimation 2s forwards;
 }
 
-@keyframes teste {
+@keyframes imgAnimation {
     from {
         transform: translate3d(-1000px, 0, 0);
 
