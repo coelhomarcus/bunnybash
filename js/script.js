@@ -67,6 +67,12 @@ function type(e) {
         else if (consoleText.innerText == "steam") {
             fetchCommand(messages.steam, "https://playerdb.co/api/player/steam/bakanull");
         }
+
+        else {
+            addUserLine(consoleText.innerText);
+            consoleText.innerText = "";
+            addMessages(["This command does not exist."]);
+        }
     }
 }
 
