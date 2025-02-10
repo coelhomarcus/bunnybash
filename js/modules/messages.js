@@ -4,9 +4,9 @@ const messages = {
         `<div class="info"><span class="command">whoami</span><span class="explain">Who is Marcus?</span></div>`,
         `<div class="info"><span class="command">skills</span><span class="explain">My skills</span></div>`,
         `<div class="info"><span class="command">social</span><span class="explain">My socials</span></div>`,
-        `<div class="info"><span class="command">clear</span><span class="explain">Clear terminal</span></div>`,
-        `<div class="info"><span class="command">history</span><span class="explain">Commands history</span></div>`,
         `<div class="info"><span class="command">forfun</span><span class="explain">More commands</span></div>`,
+        `<div class="info"><span class="command">clear</span><span class="explain">Clear terminal</span></div>`,
+        `<div class="info"><span class="command">cls</span><span class="explain">Clear terminal</span></div>`,
     ],
     forfun: [
         `<span class="title">**ForFun Commands**</span>`,
