@@ -18,7 +18,7 @@ function type(e) {
     }
 
     if (e.key == " ") {
-        consoleText.innerHTML += `<span>&nbsp;</span>`
+        consoleText.innerHTML += `<span>&nbsp</span>`
     }
 
     if (e.key == "Backspace") {
@@ -71,17 +71,21 @@ function type(e) {
             simpleCommand(messages.themes);
         }
 
-        else if ((consoleText.innerHTML == "useTheme&nbsp;1") || (consoleText.innerHTML == "t1")) {
+        else if ((consoleText.innerHTML == "useTheme &nbsp;") || (consoleText.innerHTML == "useTheme") || (consoleText.innerHTML == "usetheme")) {
+            simpleCommand(["Type the number", "example: useTheme 2"]);
+        }
+
+        else if ((consoleText.innerHTML == "useTheme &nbsp;1") || (consoleText.innerHTML == "t1") || (consoleText.innerHTML == "usetheme &nbsp;1")) {
             useTheme(1);
             simpleCommand(["Switched to the default theme"]);
         }
 
-        else if ((consoleText.innerHTML == "useTheme&nbsp;2") || (consoleText.innerHTML == "t2")) {
+        else if ((consoleText.innerHTML == "useTheme &nbsp;2") || (consoleText.innerHTML == "t2") || (consoleText.innerHTML == "usetheme &nbsp;2")) {
             useTheme(2);
             simpleCommand(["Switched to the cyberpunk theme"]);
         }
 
-        else if ((consoleText.innerHTML == "useTheme&nbsp;2") || (consoleText.innerHTML == "t3")) {
+        else if ((consoleText.innerHTML == "useTheme &nbsp;3") || (consoleText.innerHTML == "t3") || (consoleText.innerHTML == "usetheme &nbsp;3")) {
             useTheme(3);
             simpleCommand(["Switched to the cold theme"]);
         }
