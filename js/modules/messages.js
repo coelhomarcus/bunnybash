@@ -1,25 +1,30 @@
 const messages = {
     help: [
         `<span class="title">**Commands**</span>`,
-        `<div class="info"><span class="command">whoami</span><span class="explain">Who is Marcus?</span></div>`,
+        `<div class="info"><span class="command">marcus</span><span class="explain">Who is Marcus?</span></div>`,
         `<div class="info"><span class="command">skills</span><span class="explain">My skills</span></div>`,
-        `<div class="info"><span class="command">social</span><span class="explain">My socials</span></div>`,
+        `<div class="info"><span class="command">social</span><span class="explain">My social media</span></div>`,
+        `<div class="info"><span class="command">themes</span><span class="explain">Change terminal theme</span></div>`,
         `<div class="info"><span class="command">forfun</span><span class="explain">More commands</span></div>`,
         `<div class="info"><span class="command">clear</span><span class="explain">Clear terminal</span></div>`,
         `<div class="info"><span class="command">cls</span><span class="explain">Clear terminal</span></div>`,
+        `<div class="info>div>`,
+        `<span class="title">**Short Tutorial**</span>`,
+        `<div class="info"><span class="social">This text color means: click on me... or a link xD</span></div>`,
+        `<div class="info"><span class="command">And this means: a command</span></div>`,
+
     ],
     forfun: [
         `<span class="title">**ForFun Commands**</span>`,
         `<div class="info"><span class="command">dog</span><span class="explain">Random dog image</span></div>`,
         `<div class="info"><span class="command">dance</span><span class="explain">Random anime dance</span></div>`,
         `<div class="info"><span class="command">btc</span><span class="explain">Get bitcoin price</span></div>`,
-        `<div class="info"><span class="command">steam</span><span class="explain">My steam profile</span></div>`,
         `<div class="info"><span class="command">joke</span><span class="explain">Random jokes</span></div>`,
     ],
-    whoami: [
-        "My name is Marcus, and I love everything related to technology, games, and manga.",
-        "I am currently studying Information Systems at UNIFESSPA",
-        "I am also focused on improving my knowledge in web development and English.",
+    marcus: [
+        "Hi, I'm <a class='social' href='https://github.com/coelhomarcus'>Marcus</a>, and I love everything related to technology, games, and manga.",
+        "I am currently studying Information Systems at UNIFESSPA,",
+        "and I am also focused on improving my knowledge of web development and English.",
     ],
     skills: [
         "Natural Language: Portuguese (Native); English (Ongoing)",
@@ -27,15 +32,33 @@ const messages = {
         "Typesetting Language: HTML; CSS",
     ],
     social: [
-        `clickable:`,
         `<a class="social" href="https://github.com/coelhomarcus" target="_blank">GitHub</a>`,
         `<a class="social" href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>`,
+    ],
+    themes: [
+        `<span class="title">**Commands**</span>`,
+        `<div class="info"><span class="command">useTheme 1</span><span class="explain">default theme</span></div>`,
+        `<div class="info"><span class="command">useTheme 2</span><span class="explain">cyberpunk theme</span></div>`,
+        `<div class="info"><span class="command">useTheme 3</span><span class="explain">blue theme</span></div>`,
+        `<div class="info"><span class="command">useTheme 4</span><span class="explain">... theme</span></div>`,
+        `<div class="info"><span class="command">useTheme 5</span><span class="explain">... theme</span></div>`,
     ],
     dance: ['<img class="imgdefault" src="${json.url}">'],
     dog: ['<img class="imgdefault" src="${json.message}">'],
     btc: ['bitcoin: $${json.USD.sell}'],
     steam: ['<a class="social" href="${json.data.player.meta.profileurl}" target="_blank">${json.data.player.username} - click here!</a>', '<img src="${json.data.player.avatar}">',],
-    jokes: ["${json.setup}", "${json.delivery}"]
+    jokes: ["${json.setup}", "${json.delivery}"],
+    ascii: [`<p class="ascii">⡿⣡⣿⣿⡟⡼⡁⠁⣰⠂⡾⠉⢨⣿⠃⣿⡿⠍⣾⣟⢤⣿⢇⣿⢇⣿⣿⢿</p>`,
+        `<p class="ascii">⣱⣿⣿⡟⡐⣰⣧⡷⣿⣴⣧⣤⣼⣯⢸⡿⠁⣰⠟⢀⣼⠏⣲⠏⢸⣿⡟⣿</p>`,
+        `<p class="ascii">⣿⣿⡟⠁⠄⠟⣁⠄⢡⣿⣿⣿⣿⣿⣿⣦⣼⢟⢀⡼⠃⡹⠃⡀⢸⡿⢸⣿</p>`,
+        `<p class="ascii">⣿⣿⠃⠄⢀⣾⠋⠓⢰⣿⣿⣿⣿⣿⣿⠿⣿⣿⣾⣅⢔⣕⡇⡇⡼⢁⣿⣿</p>`,
+        `<p class="ascii">⣿⡟⠄⠄⣾⣇⠷⣢⣿⣿⣿⣿⣿⣿⣿⣭⣀⡈⠙⢿⣿⣿⡇⡧⢁⣾⣿⣿</p>`,
+        `<p class="ascii">⣿⡇⠄⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢻⠇⠄⠄⢿⣿⡇⢡⣾⣿⣿⣿</p>`,
+        `<p class="ascii">⣿⣷⢰⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⢰⣧⣀⡄⢀⠘⡿⣰⣿⣿⣿⣿⣿</p>`,
+        `<p class="ascii">⢹⣿⢸⣿⣿⠟⠻⢿⣿⣿⣿⣿⣿⣿⣿⣶⣭⣉⣤⣿⢈⣼⣿⣿⣿⣿⣿⣿</p>`,
+        `<p class="ascii">⢸⠇⡜⣿⡟⠄⠄⠄⠈⠙⣿⣿⣿⣿⣿⣿⣿⣿⠟⣱⣻⣿⣿⣿⣿⣿⠟⠁</p>`,
+        `<p class="ascii">⠄⣰⡗⠹⣿⣄⠄⠄⠄⢀⣿⣿⣿⣿⣿⣿⠟⣅⣥⣿⣿⣿⣿⠿⠋⠄⠄⣾</p>`,
+        `<p class="ascii">⠜⠋⢠⣷⢻⣿⣿⣶⣾⣿⣿⣿⣿⠿⣛⣥⣾⣿⠿⠟⠛⠉⠄⠄ </p>`],
 }
 
 export default messages;

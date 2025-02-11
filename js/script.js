@@ -1,17 +1,24 @@
 import messages from './modules/messages.js';
+import useTheme from './modules/themes.js';
 
 const consoleText = document.querySelector(".text");
+const username = document.querySelector(".username");
+const divider = document.querySelector(".divider");
+const path = document.querySelector(".path");
+const pathDefault = " ";
 const answers = document.querySelector(".answers");
 
 document.addEventListener("keydown", type);
-
 function type(e) {
     e.preventDefault();
 
-    const isLetter = /^[a-zA-Z]$/.test(e.key);
-
+    const isLetter = /^.$/.test(e.key);
     if (isLetter) {
         consoleText.innerText += e.key;
+    }
+
+    if (e.key == " ") {
+        consoleText.innerHTML += `<span>&nbsp;</span>`
     }
 
     if (e.key == "Backspace") {
@@ -20,52 +27,67 @@ function type(e) {
 
     if (e.key == "Enter") {
 
-        if (consoleText.innerText == "clear" || consoleText.innerText == "cls") {
+        if (consoleText.innerHTML == "clear" || consoleText.innerText == "cls") {
             cleanCommand();
         }
 
-        else if (consoleText.innerText == "help") {
+        else if (consoleText.innerHTML == "help") {
             simpleCommand(messages.help);
         }
 
-        else if (consoleText.innerText == "forfun") {
+        else if (consoleText.innerHTML == "forfun") {
             simpleCommand(messages.forfun);
         }
 
-        else if (consoleText.innerText == "whoami") {
-            simpleCommand(messages.whoami);
+        else if (consoleText.innerHTML == "marcus") {
+            simpleCommand(messages.marcus);
         }
 
-        else if (consoleText.innerText == "skills") {
+        else if (consoleText.innerHTML == "skills") {
             simpleCommand(messages.skills);
         }
 
-        else if (consoleText.innerText == "social") {
+        else if (consoleText.innerHTML == "social") {
             simpleCommand(messages.social);
         }
 
-        else if (consoleText.innerText == "joke") {
+        else if (consoleText.innerHTML == "joke") {
             fetchCommand(messages.jokes, "https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Dark,Pun,Spooky,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart");
         }
 
-        else if (consoleText.innerText == "pika") {
-            fetchCommand(messages.jokes, "https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Dark,Pun,Spooky,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart");
-        }
-
-        else if (consoleText.innerText == "btc") {
+        else if (consoleText.innerHTML == "btc") {
             fetchCommand(messages.btc, "https://blockchain.info/ticker");
         }
 
-        else if (consoleText.innerText == "dance") {
+        else if (consoleText.innerHTML == "dance") {
             fetchCommand(messages.dance, "https://api.waifu.pics/sfw/dance");
         }
 
-        else if (consoleText.innerText == "dog") {
+        else if (consoleText.innerHTML == "dog") {
             fetchCommand(messages.dog, "https://dog.ceo/api/breeds/image/random");
         }
 
-        else if (consoleText.innerText == "steam") {
-            fetchCommand(messages.steam, "https://playerdb.co/api/player/steam/bakanull");
+        else if (consoleText.innerHTML == "themes") {
+            simpleCommand(messages.themes);
+        }
+
+        else if ((consoleText.innerHTML == "useTheme&nbsp;1") || (consoleText.innerHTML == "t1")) {
+            useTheme(1);
+            simpleCommand(["Switched to the default theme"]);
+        }
+
+        else if ((consoleText.innerHTML == "useTheme&nbsp;2") || (consoleText.innerHTML == "t2")) {
+            useTheme(2);
+            simpleCommand(["Switched to the cyberpunk theme"]);
+        }
+
+        else if ((consoleText.innerHTML == "useTheme&nbsp;2") || (consoleText.innerHTML == "t3")) {
+            useTheme(3);
+            simpleCommand(["Switched to the cold theme"]);
+        }
+
+        else if (consoleText.innerHTML == "ascii") {
+            simpleCommand(messages.ascii);
         }
 
         else {
@@ -78,7 +100,7 @@ function type(e) {
 
 function addUserLine(text) {
     const p = document.createElement("p");
-    p.innerHTML = `coelho@marcus.com > <span class="command">${text}</span>`;
+    p.innerHTML = `${username.innerText}${path.innerText} <span class="divider">${divider.innerText} </span> <span class="command">${text}</span>`;
     answers.appendChild(p);
     scrollToBottom();
 }

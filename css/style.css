@@ -3,12 +3,14 @@
 
 :root {
     --main-background-color: #211d1b;
-    --main-text-console-color: #98c379;
-    --main-text-social-color: #F95;
-    --main-text-helptitle-color: #e5c07b;
-    --main-text-command-color: #61afef;
-    --main-text-answer-color: #ffe5d9;
-    --main-text-explain-color: #808080;
+    --main-console-color: #98c379;
+    --main-social-color: #F95;
+    --main-helptitle-color: #e5c07b;
+    --main-command-color: #61afef;
+    --main-answer-color: #ffe5d9;
+    --main-explain-color: #808080;
+    --main-divider-color: #ffe5d9;
+    --main-username-color: #98c379;
 }
 
 * {
@@ -25,7 +27,7 @@ body {
 }
 
 p {
-    color: var(--main-text-console-color);
+    color: var(--main-console-color);
     font-size: 1rem;
     display: block;
     line-height: 2em;
@@ -45,38 +47,47 @@ p {
 
 .blinker {
     margin-top: 4.5px;
-    background-color: var(--main-text-console-color);
+    background-color: var(--main-console-color);
     width: 10px;
     height: 20px;
     display: block;
     animation: blinker 1s linear infinite;
 }
 
+.username {
+    color: var(--main-username-color);
+}
+
+.divider {
+    color: var(--main-divider-color);
+}
+
 .command {
-    color: var(--main-text-command-color);
+    color: var(--main-command-color);
 }
 
 .console {
-    color: var(--main-text-answer-color);
+    color: var(--main-answer-color);
     font-size: 1rem;
 }
 
 .text {
-    color: var(--main-text-command-color);
+    color: var(--main-command-color);
 }
 
 .social {
-    color: var(--main-text-social-color);
+    color: var(--main-social-color);
     text-decoration: none;
     cursor: pointer;
 }
 
 .title {
-    color: var(--main-text-helptitle-color);
+    color: var(--main-helptitle-color);
+    font-size: 1.2rem;
 }
 
 .explain {
-    color: var(--main-text-explain-color);
+    color: var(--main-explain-color);
     width: 100px;
     font-style: italic;
     font-family: "JetBrains Mono", serif;
@@ -97,8 +108,14 @@ p {
 .imgdefault {
     width: auto;
     height: 380px;
-    border: 2px solid var(--main-text-console-color);
+    border: 2px solid var(--main-console-color);
     animation: imgAnimation 2s forwards;
+}
+
+.ascii {
+    line-height: 20px;
+    color: var(--main-console-color);
+
 }
 
 @keyframes imgAnimation {
@@ -141,12 +158,12 @@ p {
         opacity: 1;
         border: none;
         border-radius: 5px;
-        border: 5px solid var(--main-text-answer-color);
+        border: 5px solid var(--main-answer-color);
         caret-color: transparent;
     }
 
     #campoTexto:focus {
-        border: 5px solid var(--main-text-console-color);
+        border: 5px solid var(--main-console-color);
         outline: none;
     }
 
@@ -161,7 +178,7 @@ p {
     }
 
     .console {
-        color: var(--main-text-command-color);
+        color: var(--main-command-color);
         font-size: 0.75rem;
     }
 
@@ -182,7 +199,7 @@ p {
     }
 
     .blinker {
-        background-color: var(--main-text-console-color);
+        background-color: var(--main-console-color);
         width: 5px;
         height: 10px;
         display: block;
