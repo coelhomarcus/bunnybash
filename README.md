@@ -1,6 +1,11 @@
 # marcusbash/
 A website that simulates the functionality of a terminal with features for fetching images, chatting, and more.
 
+## What has been used in this project? `for now...`
+- HTML, CSS
+- JavaScript
+
+
 
 <details>
   <summary>APIs Used:</summary>
@@ -12,6 +17,8 @@ A website that simulates the functionality of a terminal with features for fetch
     <option>api.waifu.pics</option>
 </details>
 
+
+    
 ## 
 
 TODO: Responsiveness, more commands, and refactoring...
