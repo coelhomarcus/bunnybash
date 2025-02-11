@@ -113,7 +113,7 @@ function type(e) {
         }
 
         else if (consoleText.innerHTML == "is &nbsp;anyone &nbsp;there?") {
-            simpleCommand([`<img src="https://i.giphy.com/n3UBd63oVlQLC.webp">`]);
+            simpleCommand([`<img class="imgborderless" src="https://i.giphy.com/n3UBd63oVlQLC.webp">`]);
             useTheme(4);
         }
 

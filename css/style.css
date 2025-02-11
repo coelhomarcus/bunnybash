@@ -112,6 +112,12 @@ p {
     animation: imgAnimation 2s forwards;
 }
 
+.imgborderless {
+    width: auto;
+    height: 380px;
+    border: none;
+}
+
 .ascii {
     line-height: 20px;
     color: var(--main-console-color);
