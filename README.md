@@ -5,18 +5,18 @@ A website that simulates the functionality of a terminal with features for fetch
 - HTML, CSS
 - JavaScript
 
+## APIs Used:
+- dog.ceo/api
 
+- developers.thecatapi.com
 
-<details>
-  <summary>APIs Used:</summary>
-    <option>dog.ceo/api</option>
-    <option>developers.thecatapi.com</option>
-    <option>blockchain.info/ticker</option>
-    <option>playerdb.co/api/player/steam</option> 
-    <option>jokeapi.dev</option>
-    <option>api.waifu.pics</option>
-</details>
+- blockchain.info/ticker
 
+- playerdb.co/api/player/steam
+
+- jokeapi.dev
+
+- api.waifu.pics
 
     
 ## 
