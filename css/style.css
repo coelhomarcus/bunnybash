@@ -42,7 +42,7 @@ p {
 
 .user-text {
     display: flex;
-    gap: 5px;
+    /* gap: 5px; */
 }
 
 .blinker {
@@ -77,13 +77,13 @@ p {
 
 .social {
     color: var(--main-social-color);
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
 }
 
 .title {
     color: var(--main-helptitle-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .explain {

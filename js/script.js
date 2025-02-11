@@ -10,7 +10,7 @@ const answers = document.querySelector(".answers");
 
 document.addEventListener("keydown", type);
 function type(e) {
-    e.preventDefault();
+
 
     const isLetter = /^.$/.test(e.key);
     if (isLetter) {
@@ -19,6 +19,7 @@ function type(e) {
 
     if (e.key == " ") {
         consoleText.innerHTML += `<span>&nbsp</span>`
+        e.preventDefault();
     }
 
     if (e.key == "Backspace") {
@@ -27,16 +28,24 @@ function type(e) {
 
     if (e.key == "Enter") {
 
-        if (consoleText.innerHTML == "clear" || consoleText.innerText == "cls") {
+        if (consoleText.innerHTML == "clear" || consoleText.innerText == "c") {
             cleanCommand();
         }
 
-        else if (consoleText.innerHTML == "help") {
+        else if ((consoleText.innerHTML == "help") || (consoleText.innerHTML == "h")) {
             simpleCommand(messages.help);
         }
 
-        else if (consoleText.innerHTML == "forfun") {
+        else if ((consoleText.innerHTML == "forfun") || (consoleText.innerHTML == "ff")) {
             simpleCommand(messages.forfun);
+        }
+
+        else if ((consoleText.innerHTML == "shortcut") || (consoleText.innerHTML == "s")) {
+            simpleCommand(messages.shortcut);
+        }
+
+        else if (consoleText.innerHTML == "ee") {
+            simpleCommand(messages.easteregg);
         }
 
         else if (consoleText.innerHTML == "marcus") {
@@ -67,6 +76,10 @@ function type(e) {
             fetchCommand(messages.dog, "https://dog.ceo/api/breeds/image/random");
         }
 
+        else if (consoleText.innerHTML == "cat") {
+            fetchCommand(messages.cat, "https://api.thecatapi.com/v1/images/search");
+        }
+
         else if (consoleText.innerHTML == "themes") {
             simpleCommand(messages.themes);
         }
@@ -90,8 +103,18 @@ function type(e) {
             simpleCommand(["Switched to the cold theme"]);
         }
 
+        else if ((consoleText.innerHTML == "useTheme &nbsp;4") || (consoleText.innerHTML == "t4") || (consoleText.innerHTML == "usetheme &nbsp;4")) {
+            useTheme(4);
+            simpleCommand(["Switched to the black/white theme"]);
+        }
+
         else if (consoleText.innerHTML == "ascii") {
             simpleCommand(messages.ascii);
+        }
+
+        else if (consoleText.innerHTML == "is &nbsp;anyone &nbsp;there?") {
+            simpleCommand([`<img src="https://i.giphy.com/n3UBd63oVlQLC.webp">`]);
+            useTheme(4);
         }
 
         else {
@@ -104,7 +127,7 @@ function type(e) {
 
 function addUserLine(text) {
     const p = document.createElement("p");
-    p.innerHTML = `${username.innerText}${path.innerText} <span class="divider">${divider.innerText} </span> <span class="command">${text}</span>`;
+    p.innerHTML = `${username.innerText}${path.innerText} <span class="divider">${divider.innerText}</span><span class="command">${text}</span>`;
     answers.appendChild(p);
     scrollToBottom();
 }

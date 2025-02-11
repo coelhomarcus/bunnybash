@@ -38,6 +38,18 @@ export default function useTheme(n) {
         textUsernameColor = "#56b6c2";
     }
 
+    if (n == 4) {
+        background = "#000";
+        textConsole = "#fff";
+        textSocial = "grey";
+        textHelpTitle = "#fff";
+        textCommandColor = "#fff";
+        textAnswerColor = "#fff";
+        textExplainColor = "#fff";
+        textDividerColor = "#fff";
+        textUsernameColor = "#fff";
+    }
+
     if (n) {
         document.documentElement.style.setProperty('--main-background-color', background);
         document.documentElement.style.setProperty('--main-console-color', textConsole);

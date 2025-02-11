@@ -2,12 +2,17 @@
 A website that simulates the functionality of a terminal with features for fetching images, chatting, and more.
 
 
-APIs Used:
-- `api.waifu.pics`
-- `dog.ceo/api`
-- `blockchain.info/ticker`
-- `playerdb.co/api/player/steam` 
-- `jokeapi.dev`
+<details>
+  <summary>APIs Used:</summary>
+    <option>dog.ceo/api</option>
+    <option>developers.thecatapi.com</option>
+    <option>blockchain.info/ticker</option>
+    <option>playerdb.co/api/player/steam</option> 
+    <option>jokeapi.dev</option>
+    <option>api.waifu.pics</option>
+</details>
+
+## 
 
 TODO: Responsiveness, more commands, and refactoring...
 
