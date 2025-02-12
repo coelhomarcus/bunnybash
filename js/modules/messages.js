@@ -6,9 +6,8 @@ const messages = {
         `<div class="info"><span class="command">social</span><span class="explain">My social media</span></div>`,
         `<div class="info"><span class="command">themes</span><span class="explain">Change theme</span></div>`,
         `<div class="info"><span class="command">forfun</span><span class="explain">More commands</span></div>`,
-        `<div class="info"><span class="command">clear</span><span class="explain">Clear terminal</span></div>`,
-        `<div class="info"><span class="command">cls</span><span class="explain">Clear terminal</span></div>`,
         `<div class="info"><span class="command">shortcut</span><span class="explain">Command shortcuts</span></div>`,
+        `<div class="info"><span class="command">clear</span><span class="explain">Clear terminal</span></div>`,
     ],
     forfun: [
         `<span class="title">**ForFun Commands**</span>`,

@@ -28,7 +28,7 @@ function type(e) {
 
     if (e.key == "Enter") {
 
-        if (consoleText.innerHTML == "clear" || consoleText.innerText == "c") {
+        if (consoleText.innerHTML == "clear" || consoleText.innerHTML == "c" || consoleText.innerHTML == "cls") {
             cleanCommand();
         }
 
