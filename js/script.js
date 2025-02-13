@@ -119,8 +119,7 @@ function type(e) {
 
         else if (consoleText.innerHTML == "berserk") {
             const randomNumber = (Math.random() * (138 - 1) + 1).toFixed();
-            // simpleCommand([`<img class="imgdefault" src="http://img.coelhomarcus.com/bash/berserk/berserk%20(${randomNumber}).png">`]);
-            simpleCommand([`<a href="http://img.coelhomarcus.com/bash/berserk/berserk%20(${randomNumber}).png" target="_blank"><img class="imgmanga" src="http://img.coelhomarcus.com/bash/berserk/berserk%20(${randomNumber}).png"></a>`]);
+            simpleCommand([`<a href="https://img.coelhomarcus.com/bash/berserk/berserk%20(${randomNumber}).png" target="_blank"><img class="imgmanga" src="https://img.coelhomarcus.com/bash/berserk/berserk%20(${randomNumber}).png"></a>`]);
         }
 
         else {
