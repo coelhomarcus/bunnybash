@@ -66,6 +66,16 @@ p {
     color: var(--main-command-color);
 }
 
+.command,
+.explain {
+    display: inline-block;
+}
+
+.onlytext {
+    color: var(--main-answer-color);
+    font-size: 0.8rem;
+}
+
 .console {
     color: var(--main-answer-color);
     font-size: 1rem;
@@ -100,9 +110,10 @@ p {
     justify-content: space-between;
 }
 
-.command,
-.explain {
-    display: inline-block;
+.skills {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .imgdefault {
@@ -116,6 +127,13 @@ p {
     width: auto;
     height: 380px;
     border: none;
+}
+
+.imgmanga {
+    width: auto;
+    height: 600px;
+    border: 2px solid var(--main-console-color);
+    animation: imgAnimation 2s forwards;
 }
 
 .ascii {

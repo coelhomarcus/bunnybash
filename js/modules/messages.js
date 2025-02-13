@@ -36,9 +36,11 @@ const messages = {
         "and I am also focused on improving my knowledge of web development and English.",
     ],
     skills: [
-        "Natural Language: Portuguese (Native); English (Ongoing)",
-        "Programming Language: Python; C#; Java; Swift; JavaScript (Ongoing)",
-        "Typesetting Language: HTML; CSS",
+        `<div class="skills"><span class="onlytext">Natural Language </span><span class="explain">Portuguese (Native); English (Ongoing)</span></div>`,
+        `<div class="skills"><span class="onlytext">Programming Language </span><span class="explain">Python; C#; Java; Swift; JavaScript;</span></div>`,
+        `<div class="skills"><span class="onlytext">Typesetting Language </span><span class="explain">HTML; CSS;</span></div>`,
+        `<div class="skills"><span class="onlytext">Frameworks & Libraries </span><span class="explain">React (Ongoing);</span></div>`,
+
     ],
     social: [
         `<a class="social" href="https://github.com/coelhomarcus" target="_blank">GitHub</a>`,
