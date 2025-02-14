@@ -29,6 +29,7 @@ const messages = {
         `<span class="title">**Easter Eggs Commands**</span>`,
         `<div class="info"><span class="command">ascii</span>`,
         `<div class="info"><span class="command">is anyone there?</span>`,
+        `<div class="info"><span class="command">berserk</span>`,
     ],
     marcus: [
         "Hi, I'm <a class='social' href='https://github.com/coelhomarcus'>Marcus</a>, and I love everything related to technology, games, and manga.",
