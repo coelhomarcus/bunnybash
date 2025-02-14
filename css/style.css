@@ -45,15 +45,6 @@ p {
     /* gap: 5px; */
 }
 
-.blinker {
-    margin-top: 4.5px;
-    background-color: var(--main-console-color);
-    width: 10px;
-    height: 20px;
-    display: block;
-    animation: blinker 1s linear infinite;
-}
-
 .username {
     color: var(--main-username-color);
 }
@@ -84,6 +75,23 @@ p {
 .text {
     color: var(--main-command-color);
 }
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    color: var(--main-command-color);
+    font-size: 1rem;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+    font-family: "Courier Prime", serif;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
 
 .social {
     color: var(--main-social-color);
