@@ -6,8 +6,6 @@ A website that simulates the functionality of a terminal with features for fetch
 - JavaScript
 
 ## APIs Used:
-- dog.ceo/api
-
 - developers.thecatapi.com
 
 - blockchain.info/ticker

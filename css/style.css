@@ -213,7 +213,17 @@ p {
 
 
     .imgdefault {
-        width: 300px;
+        height: 180px;
+    }
+
+    .imgmanga {
+        width: auto;
+        height: 180px;
+    }
+
+    .imgborderless {
+        height: 180px;
+        border: none;
     }
 
     p {

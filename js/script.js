@@ -28,6 +28,8 @@ function type(e) {
 
     if (e.key == "Enter") {
 
+        e.preventDefault();
+
         if (consoleText.innerHTML == "clear" || consoleText.innerHTML == "c" || consoleText.innerHTML == "cls") {
             cleanCommand();
         }
@@ -70,10 +72,6 @@ function type(e) {
 
         else if (consoleText.innerHTML == "dance") {
             fetchCommand(messages.dance, "https://api.waifu.pics/sfw/dance");
-        }
-
-        else if (consoleText.innerHTML == "dog") {
-            fetchCommand(messages.dog, "https://dog.ceo/api/breeds/image/random");
         }
 
         else if (consoleText.innerHTML == "cat") {

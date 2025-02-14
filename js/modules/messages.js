@@ -12,7 +12,6 @@ const messages = {
     forfun: [
         `<span class="title">**ForFun Commands**</span>`,
         `<div class="info"><span class="command">cat</span><span class="explain">Random cat image</span></div>`,
-        `<div class="info"><span class="command">dog</span><span class="explain">Random dog image</span></div>`,
         `<div class="info"><span class="command">dance</span><span class="explain">Random anime dance</span></div>`,
         `<div class="info"><span class="command">btc</span><span class="explain">Get bitcoin price</span></div>`,
         `<div class="info"><span class="command">joke</span><span class="explain">Random jokes</span></div>`,
@@ -56,7 +55,6 @@ const messages = {
         `<div class="info"><span class="command">useTheme 5</span><span class="explain">... theme</span></div>`,
     ],
     dance: ['<img class="imgdefault" src="${json.url}">'],
-    dog: ['<img class="imgdefault" src="${json.message}">'],
     cat: ['<img class="imgdefault" src="${json[0].url}">'],
     btc: ['bitcoin: $${json.USD.sell}'],
     steam: ['<a class="social" href="${json.data.player.meta.profileurl}" target="_blank">${json.data.player.username} - click here!</a>', '<img src="${json.data.player.avatar}">',],
