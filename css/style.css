@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: var(--main-background-color);
+    background: var(--main-background-color);
     font-family: "Courier Prime", serif;
     margin: 50px;
     display: flex;
@@ -180,7 +180,7 @@ input[type=text]:focus {
 @media (max-width: 700px) {
 
     body {
-        background-color: var(--main-background-color);
+        background: var(--main-background-color);
         font-family: "Courier Prime", serif;
         margin: 5px 10px;
         margin-top: 50px;

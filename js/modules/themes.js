@@ -51,6 +51,7 @@ export default function useTheme(n) {
     }
 
     if (n) {
+        document.body.style.background = background;
         document.documentElement.style.setProperty('--main-background-color', background);
         document.documentElement.style.setProperty('--main-console-color', textConsole);
         document.documentElement.style.setProperty('--main-social-color', textSocial);
