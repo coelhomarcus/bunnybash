@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>marcusbash/</title>
-    <link rel="stylesheet" href="./css/style.css?v=3">
+    <script>
+        var timestamp = new Date().getTime();
+        var css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.href = "./css/style.css?v=" + timestamp;
+        document.head.appendChild(css);
+    </script>
     <link rel="shortcut icon" href="https://img.coelhomarcus.com/bash/icon/favicon.svg" type="image/x-icon">
 </head>
 
@@ -22,7 +28,14 @@
         </p>
         <input type="text" id="campoTexto" placeholder="click here to type" />
     </div>
-    <script type="module" src="./js/script.js?v=3"></script>
+
+    <script>
+        var timestamp = new Date().getTime();
+        var script = document.createElement("script");
+        script.type = "module";  // 🔥 Adicionando type="module"
+        script.src = "./js/script.js?v=" + timestamp;
+        document.body.appendChild(script);
+    </script>
 </body>
 
 </html>
