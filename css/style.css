@@ -177,28 +177,7 @@ input[type=text]:focus {
     }
 }
 
-#campoTexto {
-    display: none;
-}
-
 @media (max-width: 700px) {
-    #campoTexto {
-        padding: 10px;
-        width: 150px;
-        height: 10px;
-        display: initial;
-        opacity: 1;
-        border: none;
-        border-radius: 5px;
-        border: 5px solid var(--main-answer-color);
-        caret-color: transparent;
-    }
-
-    #campoTexto:focus {
-        border: 5px solid var(--main-console-color);
-        outline: none;
-    }
-
 
     body {
         background-color: var(--main-background-color);
@@ -218,7 +197,6 @@ input[type=text]:focus {
         width: 100px;
         font-size: 0.75rem;
     }
-
 
     .imgdefault {
         height: 180px;
@@ -240,17 +218,22 @@ input[type=text]:focus {
         font-size: 0.75rem;
     }
 
-    .blinker {
-        background-color: var(--main-console-color);
-        width: 5px;
-        height: 10px;
-        display: block;
-        animation: blinker 1s linear infinite;
-    }
-
     .user {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    input[type=text] {
+        width: 30%;
+        border: 1px solid var(--main-console-color);
+        font-size: 0.75rem;
+        line-height: 2em;
+        letter-spacing: 0.05em;
+        font-family: "Courier Prime", serif;
+    }
+
+    input[type=text]:focus {
+        outline: auto;
     }
 }

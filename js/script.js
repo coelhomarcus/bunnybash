@@ -2,13 +2,13 @@ import messages from './modules/messages.js';
 import useTheme from './modules/themes.js';
 
 const input = document.querySelector("#text");
+input.value = "";
+
 const username = document.querySelector(".username");
 const divider = document.querySelector(".divider");
 const path = document.querySelector(".path");
 const pathDefault = " ";
 const answers = document.querySelector(".answers");
-
-input.value = "";
 
 document.addEventListener("keydown", type);
 function type(e) {
