@@ -2,6 +2,18 @@ let background, textConsole, textSocial, textHelpTitle, textCommandColor, textAn
 
 export default function useTheme(n) {
 
+    if (n == 0) {
+        background = "#1e1e2e";
+        textConsole = "#cdd6f4";
+        textSocial = "#89b4fa";
+        textHelpTitle = "#fab387";
+        textCommandColor = "#f9e2af";
+        textAnswerColor = "#a6e3a1";
+        textExplainColor = "#f38ba8";
+        textDividerColor = "#ffe5d9";
+        textUsernameColor = "#98c379";
+    }
+
     if (n == 1) {
         background = "#211d1b";
         textConsole = "#98c379";

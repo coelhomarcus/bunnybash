@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
-    --main-background-color: #211d1b;
-    --main-console-color: #98c379;
-    --main-social-color: #F95;
-    --main-helptitle-color: #e5c07b;
-    --main-command-color: #61afef;
-    --main-answer-color: #ffe5d9;
-    --main-explain-color: #808080;
+    --main-background-color: #1e1e2e;
+    --main-console-color: #cdd6f4;
+    --main-social-color: #89b4fa;
+    --main-helptitle-color: #fab387;
+    --main-command-color: #f9e2af;
+    --main-answer-color: #a6e3a1;
+    --main-explain-color: #f38ba8;
     --main-divider-color: #ffe5d9;
     --main-username-color: #98c379;
 }
@@ -145,7 +145,8 @@ input[type=text]:focus {
 }
 
 .ascii {
-    line-height: 20px;
+    line-height: 17px;
+    letter-spacing: -0.5px;
     color: var(--main-console-color);
 
 }

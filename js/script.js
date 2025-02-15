@@ -1,5 +1,6 @@
 import messages from './modules/messages.js';
 import useTheme from './modules/themes.js';
+import ascii from './modules/ascii.js';
 
 const input = document.querySelector("#text");
 input.value = "";
@@ -63,9 +64,13 @@ function type(e) {
         else if ((input.value == "useTheme ") || (input.value == "useTheme") || (input.value == "usetheme")) {
             simpleCommand(["Type the number", "example: useTheme 2"]);
         }
+        else if ((input.value == "useTheme 0") || (input.value == "t0") || (input.value == "usetheme 0")) {
+            useTheme(0);
+            simpleCommand(["Switched to the default theme"]);
+        }
         else if ((input.value == "useTheme 1") || (input.value == "t1") || (input.value == "usetheme 1")) {
             useTheme(1);
-            simpleCommand(["Switched to the default theme"]);
+            simpleCommand(["Switched to the old theme"]);
         }
         else if ((input.value == "useTheme 2") || (input.value == "t2") || (input.value == "usetheme 2")) {
             useTheme(2);
@@ -80,7 +85,9 @@ function type(e) {
             simpleCommand(["Switched to the black/white theme"]);
         }
         else if (input.value == "ascii") {
-            simpleCommand(messages.ascii);
+            var randomNumber = (Math.random() * (10 - 0) + 0).toFixed();
+            addConsoleLine(ascii[randomNumber]);
+            input.value = "";
         }
         else if (input.value == "is anyone there?") {
             simpleCommand([`<img class="imgborderless" src="https://i.giphy.com/n3UBd63oVlQLC.webp">`]);
