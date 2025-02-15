@@ -62,7 +62,7 @@ export default function useTheme(n) {
         textUsernameColor = "#fff";
     }
 
-    if (n) {
+    if (!isNaN(n)) {
         document.body.style.background = background;
         document.documentElement.style.setProperty('--main-background-color', background);
         document.documentElement.style.setProperty('--main-console-color', textConsole);

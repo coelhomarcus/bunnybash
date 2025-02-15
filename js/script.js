@@ -114,7 +114,7 @@ function type(e) {
 
 function addUserLine(text) {
     const p = document.createElement("p");
-    p.innerHTML = `${username.innerText}${path.innerText} <span class="divider">${divider.innerText}</span><span class="command">${text}</span>`;
+    p.innerHTML = `<span class="username">${username.innerText}${path.innerText}</span><span class="divider">${divider.innerText}</span><span class="command">${text}</span>`;
     answers.appendChild(p);
     window.scrollTo(0, document.body.scrollHeight);
 }
