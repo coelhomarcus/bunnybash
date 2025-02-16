@@ -90,12 +90,15 @@ function type(e) {
             input.value = "";
         }
         else if (input.value == "is anyone there?") {
-            simpleCommand([`<img class="imgborderless" src="https://i.giphy.com/n3UBd63oVlQLC.webp">`]);
+            simpleCommand(messages.anyonethere);
             useTheme(4);
         }
         else if (input.value == "berserk") {
             const randomNumber = (Math.random() * (138 - 1) + 1).toFixed();
             simpleCommand([`<a href="https://img.coelhomarcus.com/bash/berserk/berserk${randomNumber}.png" target="_blank"><img class="imgmanga" src="https://img.coelhomarcus.com/bash/berserk/berserk${randomNumber}.png"></a>`]);
+        }
+        else if (input.value == "recos" || input.value == "recommendations") {
+            simpleCommand(messages.recos);
         }
         else if (input.value.split(" ")[0] == "background") {
             const url = input.value.split(" ")[1];

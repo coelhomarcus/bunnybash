@@ -11,6 +11,7 @@ const messages = {
     ],
     forfun: [
         `<span class="title">**ForFun Commands**</span>`,
+        `<div class="info"><span class="command">recos</span><span class="explain">My recommendations</span></div>`,
         `<div class="info"><span class="command">cat</span><span class="explain">Random cat image</span></div>`,
         `<div class="info"><span class="command">dance</span><span class="explain">Random anime dance</span></div>`,
         `<div class="info"><span class="command">btc</span><span class="explain">Get bitcoin price</span></div>`,
@@ -59,6 +60,15 @@ const messages = {
     btc: ['bitcoin: $${json.USD.sell}'],
     steam: ['<a class="social" href="${json.data.player.meta.profileurl}" target="_blank">${json.data.player.username} - click here!</a>', '<img src="${json.data.player.avatar}">',],
     jokes: ["${json.setup}", "${json.delivery}"],
+    recos: [`<span class="title">**Recommendations**</span>`,
+        `<div class="info"><span class="onlytext">mangas</span><span class="explain">Berserk, 20th Century Boys...</span></div>`,
+        `<div class="info"><span class="onlytext">pc games</span><span class="explain">Cyberpunk 2077, Elden Ring, Dark Souls III</span></div>`,
+        `<div class="info"><span class="onlytext">ps2 games</span><span class="explain">Silent Hill 2, Shadow of Memories</span></div>`,
+        `<div class="info"><span class="onlytext">movies</span><span class="explain">Prisoners...</span></div>`,
+        `<div class="info"><span class="onlytext">WIP</span></div>`,
+
+    ],
+    anyonethere: [`<img class="imgborderless" src="https://i.giphy.com/n3UBd63oVlQLC.webp">`],
 }
 
 export default messages;
