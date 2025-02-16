@@ -100,6 +100,26 @@ function type(e) {
         else if (input.value == "recos" || input.value == "recommendations") {
             simpleCommand(messages.recos);
         }
+        else if (input.value == "github") {
+            simpleCommand(["Opening github..."]);
+            newTab("https://github.com/coelhomarcus");
+        }
+        else if (input.value == "youtube") {
+            simpleCommand(["Opening Youtube..."]);
+            newTab("https://www.youtube.com/@bakanull");
+        }
+        else if (input.value == "linkedin") {
+            simpleCommand(["Opening Linkedin..."]);
+            newTab("https://www.linkedin.com/in/coelhomarcus/");
+        }
+        else if (input.value == "steam") {
+            simpleCommand(["Opening Steam..."]);
+            newTab("https://steamcommunity.com/id/bakanull/");
+        }
+        else if (input.value == "itchio") {
+            simpleCommand(["Opening Itch.io..."]);
+            newTab("https://bakanull.itch.io/");
+        }
         else if (input.value.split(" ")[0] == "background") {
             const url = input.value.split(" ")[1];
             console.log(url);
@@ -170,5 +190,11 @@ async function addFetchMessages(array, urlFetch) {
             resolve();
         }, i * 10));
     }
+}
+
+function newTab(link) {
+    setTimeout(function () {
+        window.open(link, "_blank");
+    }, 500);
 }
 

@@ -64,7 +64,7 @@ p {
 
 .onlytext {
     color: var(--main-answer-color);
-    font-size: 0.8rem;
+    font-size: 0.95rem;
 }
 
 .console {
@@ -148,7 +148,6 @@ input[type=text]:focus {
     line-height: 17px;
     letter-spacing: -0.5px;
     color: var(--main-console-color);
-
 }
 
 @keyframes imgAnimation {
@@ -159,12 +158,6 @@ input[type=text]:focus {
 
     to {
         transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes blinker {
-    50% {
-        opacity: 0;
     }
 }
 

@@ -44,8 +44,12 @@ const messages = {
 
     ],
     social: [
-        `<a class="social" href="https://github.com/coelhomarcus" target="_blank">GitHub</a>`,
-        `<a class="social" href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a>`,
+        `<div class="info"><span class="command">github</span><span class="explain"><a class="social" href="https://github.com/coelhomarcus" target="_blank">github.com/coelhomarcus</a></span></div>`,
+        `<div class="info"><span class="command">linkedin</span><span class="explain"><a class="social" href="https://www.linkedin.com/in/coelhomarcus/" target="_blank">linkedin.com/in/coelhomarcus</a></span></div>`,
+        `<div class="info"><span class="command">youtube</span><span class="explain"><a class="social" href="https://www.youtube.com/@bakanull" target="_blank">youtube.com/@bakanull</a></span></div>`,
+        `<div class="info"><span class="command">steam</span><span class="explain"><a class="social" href="https://steamcommunity.com/id/bakanull/" target="_blank">steamcommunity.com/id/bakanull</a></span></div>`,
+        `<div class="info"><span class="command">itchio</span><span class="explain"><a class="social" href="https://bakanull.itch.io/" target="_blank">bakanull.itch.io</a></span></div>`,
+        `<div class="info"><span class="explain">discord</span><span class="explain">@coelhomarcus</span></div>`,
     ],
     themes: [
         `<span class="title">**Commands**</span>`,
