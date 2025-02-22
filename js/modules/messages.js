@@ -4,6 +4,7 @@ const messages = {
         `<div class="info"><span class="command">marcus</span><span class="explain">Who is Marcus?</span></div>`,
         `<div class="info"><span class="command">skills</span><span class="explain">My skills</span></div>`,
         `<div class="info"><span class="command">social</span><span class="explain">My social media</span></div>`,
+        `<div class="info"><span class="command">projects</span><span class="explain">My projects</span></div>`,
         `<div class="info"><span class="command">themes</span><span class="explain">Change theme</span></div>`,
         `<div class="info"><span class="command">forfun</span><span class="explain">More commands</span></div>`,
         `<div class="info"><span class="command">shortcut</span><span class="explain">Command shortcuts</span></div>`,
@@ -50,6 +51,10 @@ const messages = {
         `<div class="info"><span class="command">steam</span><span class="explain"><a class="social" href="https://steamcommunity.com/id/bakanull/" target="_blank">steamcommunity.com/id/bakanull</a></span></div>`,
         `<div class="info"><span class="command">itchio</span><span class="explain"><a class="social" href="https://bakanull.itch.io/" target="_blank">bakanull.itch.io</a></span></div>`,
         `<div class="info"><span class="explain">discord</span><span class="explain">@coelhomarcus</span></div>`,
+    ],
+    projects: [
+        `<div class="info"><span class="command">bunnybash</span><span class="explain"><a class="social" href="https://bash.coelhomarcus.com" target="_blank">bash.coelhomarcus.com</a></span></div>`,
+        `<div class="info"><span class="command">catype</span><span class="explain"><a class="social" href="https://catype.coelhomarcus.com" target="_blank">catype.coelhomarcus.com</a></span></div>`,
     ],
     themes: [
         `<span class="title">**Commands**</span>`,

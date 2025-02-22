@@ -40,6 +40,9 @@ function type(e) {
         else if (input.value == "marcus") {
             simpleCommand(messages.marcus);
         }
+        else if (input.value == "projects" || input.value == "project") {
+            simpleCommand(messages.projects);
+        }
         else if (input.value == "skills") {
             simpleCommand(messages.skills);
         }
