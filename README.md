@@ -20,8 +20,6 @@ A website that simulates the functionality of a terminal with features for fetch
 
 - blockchain.info/ticker
 
-- playerdb.co/api/player/steam
-
 - jokeapi.dev
 
 - api.waifu.pics
