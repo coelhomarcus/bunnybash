@@ -1,4 +1,4 @@
-[![](./img/banner.png)](https://bash.coelhomarcus.com/)
+[![](./img/rabbit.png)](https://bash.coelhomarcus.com/)
 
 </br>
 
