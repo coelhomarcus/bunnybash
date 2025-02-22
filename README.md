@@ -7,7 +7,7 @@
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 # About
-A website that simulates the functionality of a terminal with features for fetching images, chatting, and more.
+A website that simulates the functionality of a terminal with features for fetching images, jokes, and more.
 
 # Features
 - minimalistic design
