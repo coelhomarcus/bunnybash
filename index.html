@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Bunny Bash</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="./img/rabbit.png" type="image/x-icon" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>bunnybash</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="./img/rabbit.png" type="image/x-icon">
-</head>
+    <body>
+        <p class="typing">Welcome to my interactive web terminal.</p>
+        <p class="typing">For a list of available commands, type <span class="command">'help'</span>.</p>
+        <div class="answers"></div>
+        <div class="user">
+            <p class="user-text">
+                <span class="username">user@bunny</span>
+                <span class="path"></span>
+                <span class="divider">~ %&nbsp;</span>
+                <input type="text" name="" id="text" value="" autocomplete="off" spellcheck="false" />
+            </p>
+        </div>
 
-<body>
-    <p class="typing">Welcome to my interactive web terminal.</p>
-    <p class="typing">For a list of available commands, type <span class="command">'help'</span>.</p>
-    <div class="answers"></div>
-    <div class="user">
-        <p class="user-text">
-            <span class="username">user@bunny</span>
-            <span class="path"></span>
-            <span class="divider">~ %&nbsp;</span>
-            <input type="text" name="" id="text" value="">
-        </p>
-    </div>
-
-    <script>
-        var timestamp = new Date().getTime();
-        var script = document.createElement("script");
-        script.type = "module";
-        script.src = "./js/script.js?v=" + timestamp;
-        document.body.appendChild(script);
-    </script>
-</body>
-
+        <script>
+            var timestamp = new Date().getTime();
+            var script = document.createElement("script");
+            script.type = "module";
+            script.src = "./js/script.js?v=" + timestamp;
+            document.body.appendChild(script);
+        </script>
+    </body>
 </html>
