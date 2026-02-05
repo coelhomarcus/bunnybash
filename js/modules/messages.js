@@ -32,7 +32,7 @@ const messages = {
         `<div class="info"><span class="command">is anyone there?</span>`,
     ],
     marcus: [
-        "Hi, I'm <a class='social' href='https://coelhomarcus.com' target='_blank'>Marcus</a>, and I love everything related to technology, games, and manga.",
+        "Hi, I'm <a class='social' href='https://marcuscoelho.com' target='_blank'>Marcus</a>, and I love everything related to technology, games, and manga.",
         "I am currently studying Information Systems at UNIFESSPA,",
         "and I am also focused on improving my knowledge of web development and English.",
     ],
@@ -61,13 +61,13 @@ const messages = {
         `<div class="info"><span class="explain">discord</span><span class="explain">@coelhomarcus</span></div>`,
     ],
     projects: [
-        `<div class="info"><span class="command">portfolio & blog</span><span class="explain"><a class="social" href="https://coelhomarcus.com" target="_blank">coelhomarcus.com</a></span></div>`,
+        `<div class="info"><span class="command">portfolio & blog</span><span class="explain"><a class="social" href="https://marcuscoelho.com" target="_blank">marcuscoelho.com</a></span></div>`,
         `<div class="info"><span class="command">cafuntalk</span><span class="explain"><a class="social" href="https://cafuntalk.com" target="_blank">cafuntalk.com</a></span></div>`,
         `<div class="info"><span class="command">bunnybash</span><span class="explain"><a class="social" href="https://coelhomarcus.github.io/bunnybash/" target="_blank">coelhomarcus.github.io/bunnybash</a></span></div>`,
         `<div class="info"><span class="command">Lune VNs</span><span class="explain"><a class="social" href="https://maahlune.github.io/vn/" target="_blank">maahlune.github.io/vn</a></span></div>`,
         `<div class="info"><span class="command">blob</span><span class="explain"><a class="social" href=https://blob-temp.vercel.app/" target="_blank">blob-temp.vercel.app</a></span></div>`,
         `<div class="info"><span class="command">catype</span><span class="explain"><a class="social" href="https://coelhomarcus.github.io/catype/" target="_blank">coelhomarcus.github.io/catype</a></span></div>`,
-        `<div class="info"><span class="command">all projects</span><span class="explain"><a class="social" href="https://coelhomarcus.com/projects" target="_blank">coelhomarcus.com/projects</a></span></div>`,
+        `<div class="info"><span class="command">all projects</span><span class="explain"><a class="social" href="https://marcuscoelho.com/projects" target="_blank">marcuscoelho.com/projects</a></span></div>`,
     ],
     themes: [
         `<span class="title">**Commands**</span>`,
